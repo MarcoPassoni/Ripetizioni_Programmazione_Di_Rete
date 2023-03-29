@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+﻿    using System.Reflection;
 
 namespace _4
 {
@@ -14,6 +14,7 @@ namespace _4
             {
                 return;
             }
+
             var result = await response.Content.ReadAsByteArrayAsync();
             File.WriteAllBytes("./IMMAGINI/Image_1.png", result);
         }
