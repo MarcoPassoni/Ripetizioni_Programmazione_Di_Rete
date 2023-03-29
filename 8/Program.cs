@@ -8,8 +8,8 @@ namespace _8
         static HttpClient client;
         static async Task Main(string[] args)
         {
-            //serializzare e deserializzare una lista presa da json place holder user, una volta fatto creo un nuovo user che contenga user con nome, email e città e
-           //salva la lista in un file
+             //serializzare e deserializzare una lista presa da json place holder user, una volta fatto creo un nuovo user che contenga user con nome, email e città e
+            //salva la lista in un file
             client = new HttpClient();
             string path = "https://jsonplaceholder.typicode.com/users";
             var response = await client.GetAsync(path);
