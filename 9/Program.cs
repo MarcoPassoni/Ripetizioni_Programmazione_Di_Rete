@@ -16,6 +16,7 @@ namespace _9
             {
                 return;
             }
+
             var result = await response.Content.ReadFromJsonAsync<WeatherMap>();
             List<Double> tempMin = new List<double>(); 
             for (int i = 0; i < result.Daily.Temperature2mMin.Count; i++)
